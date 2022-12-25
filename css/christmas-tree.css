@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Lilita+One&family=Montserrat+Alternates:wght@600;700&family=Poppins&display=swap");
+html, body {
+  overflow-x: hidden;
+}
+
+:root{
+  --color-primary: #fff;
+  --color-text: #000;
+}
+
+.dark-mode{
+  --color-primary: #191d2b;
+  --color-text: #fff;
+}
+
+body {
+  background-color: var(--color-primary);
+  height: 100vh;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: .5rem;
+  color: var(--color-text);
+  
+}
+.christmas-tree{
+  margin: auto;
+}
+
+
+.christmas-tree h3{
+  font-size: 2rem;
+  font-family: "Balsamiq Sans";
+  font-weight: 700;
+  color: #1ea896;
+}
+
+#color-changed{
+  color: #ff715b;
+}
+
+.christmas-tree h3 span{
+  color: var(--color-text);
+  margin: 0.6rem;
+}
+.christmas-tree-icon-parent{
+  display: flex;
+}
+
+.christmas-tree-icon{
+  margin: auto;
+  font-size: 20rem;
+  color: #1ea896;
+}
+
+.description{
+  text-align: center;
+  font-family: "Poppins";
+  
+}
+
+.description i{
+  font-size: 1.2rem;
+  color: #1ea896;
+  margin: 0.3rem;
+}
+
+.description span{
+  font-family: "Lilita One";
+  color: #ff715b;
+  font-size: 1.2rem;
+  margin: 0.3rem;
+}
+
+.audio-section{
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0;
+  box-shadow: 1px 1px 20px rgb(0,0,0,.1);
+  /* width: 100vw; */
+}
+
+.christmas-svg{
+  display: flex;
+  /* margin: auto; */
+}
+
+.theme-btn{
+  top: 1%;
+  left: 1%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,.3);
+  transition: all .1s ease-in-out;
+}
+
+.theme-btn:active{
+  transform: translateY(-5px);
+}
+
+.theme-btn i{
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+#if-show{
+  display: none;
+}
+
+
+@media screen and (max-width: 1140px){
+  .christmas-tree h3{
+    font-size: 2rem;
+    font-family: "Balsamiq Sans";
+    font-weight: 700;
+    color: #1ea896;
+  }
+
+  .christmas-tree-icon{
+    margin: auto;
+    font-size: 15rem;
+    color: #1ea896;
+  }
+  
+  body{
+    grid-template-columns: none;
+  }
+
+  #if-show{
+    display: contents;
+  }
+  #if-display{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width : 300px){
+  .christmas-tree h3{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width : 390px){
+  .christmas-tree h3{
+    font-size: 1rem;
+  }
+}
